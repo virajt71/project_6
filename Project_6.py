@@ -1,4 +1,22 @@
-class_names = ['wheel', 'pizza', 'smiley_face', 'apple', 'potato', 'basketball', 'soccer_ball', 'brain', 'clock', 'circle']
+# set your random seed value, put any number here
+RANDOM_SEED = 1234
+
+import random
+
+with open('categories.txt') as f:
+    all_class_names = f.readlines()
+
+
+random.seed(RANDOM_SEED)
+
+all_class_names = [x.strip().replace(' ', '_') for x in all_class_names] 
+
+nb_classes = 10
+
+# select random 10 classes
+class_names = random.sample(all_class_names, nb_classes)
+
+%class_names = ['wheel', 'pizza', 'smiley_face', 'apple', 'potato', 'basketball', 'soccer_ball', 'brain', 'clock', 'circle']
 
 import urllib.request
 import os 
