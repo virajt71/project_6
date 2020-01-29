@@ -16,7 +16,7 @@ nb_classes = 10
 # select random 10 classes
 class_names = random.sample(all_class_names, nb_classes)
 
-%class_names = ['wheel', 'pizza', 'smiley_face', 'apple', 'potato', 'basketball', 'soccer_ball', 'brain', 'clock', 'circle']
+#class_names = ['wheel', 'pizza', 'smiley_face', 'apple', 'potato', 'basketball', 'soccer_ball', 'brain', 'clock', 'circle']
 
 import urllib.request
 import os 
